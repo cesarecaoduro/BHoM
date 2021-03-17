@@ -1,0 +1,26 @@
+﻿{
+  "Namespace": {
+    "ToNew": {
+	
+    },
+    "ToOld": {
+
+    }
+  },
+  "Type": {
+    "ToNew": {
+
+    },
+    "ToOld": {
+
+    }
+  },
+  "Property": {
+    "ToNew": {"BH.oM.Inspection.Audit.Issues" : "BH.oM.Inspection.Audit.IssueNumbers"
+
+    },
+    "ToOld": {"BH.oM.Inspection.Audit.IssueNumbers" : "BH.oM.Inspection.Audit.Issues"
+
+    }
+  }
+}
