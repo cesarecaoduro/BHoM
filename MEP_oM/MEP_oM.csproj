@@ -23,7 +23,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Properties\" />
     <None Include="Versioning_40.json" CopyToOutputDirectory="PreserveNewest"/>
     <None Include="Versioning_43.json" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>

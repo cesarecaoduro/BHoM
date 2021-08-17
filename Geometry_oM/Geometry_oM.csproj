@@ -19,9 +19,4 @@
     <ProjectReference Include="..\Quantities_oM\Quantities_oM.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-     
 </Project>

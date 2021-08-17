@@ -12,10 +12,6 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Folder Include="Fragments\" />
-    <Folder Include="_Properties\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BHoM\BHoM.csproj" />
     <ProjectReference Include="..\Dimensional_oM\Dimensional_oM.csproj" />
     <ProjectReference Include="..\Geometry_oM\Geometry_oM.csproj" />

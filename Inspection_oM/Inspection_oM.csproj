@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Geometry_oM\Geometry_oM.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-  
 </Project>
