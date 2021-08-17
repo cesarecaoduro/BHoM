@@ -5,7 +5,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BH.oM.Base</RootNamespace>
     <BaseOutputPath>C:\ProgramData\BHoM\Assemblies</BaseOutputPath>
-    <Description>The core BHoM contains objects from wide ranging domains across the disciplines of engineering, architecture, our environment and the physical world, as well as defining concepts within programming, machine learning, mathematics, geometry and planning to name a few.</Description>
+    <Description>Base BHoM Objects</Description>
     <PackageProjectUrl>https://bhom.xyz/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BHoM/BHoM</RepositoryUrl>
     <Copyright>https://github.com/BHoM/BHoM/blob/master/LICENSE</Copyright>
