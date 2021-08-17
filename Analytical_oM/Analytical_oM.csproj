@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BH.oM.Analytical</RootNamespace>
-    <BaseOutputPath>C:\ProgramData\BHoM\Assemblies</BaseOutputPath>
+    <OutDir>C:\ProgramData\BHoM\Assemblies</OutDir>
     <Description>Analytical BHoM Objects</Description>
     <PackageProjectUrl>https://bhom.xyz/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BHoM/BHoM</RepositoryUrl>
@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Item Include="Versioning_32.json" />
   </ItemGroup>
 
 </Project>

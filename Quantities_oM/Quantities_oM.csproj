@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BH.oM.Quantities</RootNamespace>
-    <BaseOutputPath>C:\ProgramData\BHoM\Assemblies</BaseOutputPath>
+    <OutDir>C:\ProgramData\BHoM\Assemblies</OutDir>
     <Description>Quantities BHoM Objects</Description>
     <PackageProjectUrl>https://bhom.xyz/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BHoM/BHoM</RepositoryUrl>
