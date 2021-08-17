@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <Folder Include="_Properties\" />
+    <None Include="Versioning_40.json" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
   
 </Project>

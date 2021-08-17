@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Item Include="Versioning_32.json" />
+    <None Include="Versioning_32.json" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
 
 </Project>

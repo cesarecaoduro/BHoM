@@ -25,6 +25,9 @@
   
   <ItemGroup>
     <Folder Include="_Properties\" />
+    <None Include="Versioning_33.json" CopyToOutputDirectory="PreserveNewest"/>
+    <None Include="Versioning_40.json" CopyToOutputDirectory="PreserveNewest"/>
+    <None Include="Versioning_42.json" CopyToOutputDirectory="PreserveNewest"/>
   </ItemGroup>
  
 </Project>
