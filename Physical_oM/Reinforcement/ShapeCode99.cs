@@ -35,7 +35,7 @@ using BH.oM.Quantities.Attributes;
 namespace BH.oM.Physical.Reinforcement
 {
     [Description("Base interface for all reinforcement bars.")]
-    public interface IReinforcingBar : IBHoMObject
+    public interface ShapeCode99 : IReinforcement, IBHoMObject
     {
         /***************************************************/
         /**** Properties                                ****/
@@ -43,15 +43,6 @@ namespace BH.oM.Physical.Reinforcement
 
         [Description("Centreline of the reinforcement bar in three-dimensional space. When the BendRadius is sufficient for any kinks in the rebar, this can be defined as a polyline, ommiting any arcs in corners.")]
         ICurve CentreCurve { get; set; }
-
-        [Length]
-        double Diameter { get; set; }
-
-        Material Material { get; set; }
-
-        [Length]
-        [Description("Bend radius used for any discontinuities in the CentreCurve.")]
-        double BendRadius { get; set; }
 
         /***************************************************/
     }
