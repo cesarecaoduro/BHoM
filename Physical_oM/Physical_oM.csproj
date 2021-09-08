@@ -68,6 +68,7 @@
     <Compile Include="Materials\IMaterialProperties.cs" />
     <Compile Include="Elements\IOpening.cs" />
     <Compile Include="IPhysical.cs" />
+    <Compile Include="Reinforcement\IShapeCode.cs" />
     <Compile Include="Reinforcement\ShapeCode99.cs" />
     <Compile Include="Reinforcement\ShapeCode98.cs" />
     <Compile Include="Reinforcement\ShapeCode77.cs" />
@@ -104,7 +105,7 @@
     <Compile Include="Reinforcement\ShapeCode12.cs" />
     <Compile Include="Reinforcement\ShapeCode11.cs" />
     <Compile Include="Reinforcement\ShapeCode00.cs" />
-    <Compile Include="Reinforcement\IReinforcement.cs" />
+    <Compile Include="Reinforcement\Reinforcement.cs" />
     <Compile Include="Reinforcement\IReinforcingBar.cs" />
     <Compile Include="Reinforcement\PrimaryReinforcingBar.cs" />
     <Compile Include="Reinforcement\ReinforcementFragment.cs" />
