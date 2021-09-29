@@ -36,6 +36,7 @@ namespace BH.oM.Environment.Elements
         FloorExposed,
         FloorInternal,
         FloorRaised,
+        Glazing,
         Roof,
         Shade,
         SlabOnGrade,
