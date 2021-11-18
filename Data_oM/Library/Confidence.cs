@@ -20,26 +20,22 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BH.oM.Base
+namespace BH.oM.Data.Library
 {
-    [Description("Toolkit Settings that need to be saved permanently.")]
-    public interface ISettings : IObject
+    [Description("Level of confidence for the serialized DataSet, outlining both the reliability of the source and the fidelity of the dataset to that source.")]
+    public enum Confidence 
     {
-        /***************************************************/
-        /**** Properties                                ****/
-        /***************************************************/
-
-
-        /***************************************************/
+        [Description("Default value - assume no fidelity and no source.")]
+        Undefined,
+        [Description("The Dataset may not have a reliable source and/or fidelity to the source has not been tested")]
+        None,
+        [Description("The Dataset comes from an unreliable source and matches the source based on initial checks.")]
+        Low,
+        [Description("The Dataset comes from a reliable source and matches the source based on initial checks.")]
+        Medium,
+        [Description("The Dataset comes from a reliable source and matches the source based on extensive review and testing.")]
+        High
     }
 }
-
-

@@ -20,26 +20,27 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
-namespace BH.oM.Base
+using BH.oM.Base;
+using BH.oM.Analytical.Elements;
+using BH.oM.Geometry;
+
+namespace BH.oM.Environment.Elements
 {
-    [Description("Toolkit Settings that need to be saved permanently.")]
-    public interface ISettings : IObject
+    [Description("A self-contained unit of accommodation, that could contain smaller spaces")]
+    public class Zone : BHoMObject, IRegion
     {
-        /***************************************************/
-        /**** Properties                                ****/
-        /***************************************************/
+        [Description("An ID string used for reference")]
+        public virtual string Reference { get; set; } = "";
 
-
-        /***************************************************/
+        [Description("A 2D curve defining the external boundaries of the floor of the region.")]
+        public virtual ICurve Perimeter { get; set; } = new Polyline();
     }
+
 }
-
-
