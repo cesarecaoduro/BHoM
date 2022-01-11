@@ -1,4 +1,4 @@
-/*
+﻿/*
  * This file is part of the Buildings and Habitats object Model (BHoM)
  * Copyright (c) 2015 - 2021, the respective contributors. All rights reserved.
  *
@@ -22,14 +22,24 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text;
+using BH.oM.Base;
 using System.ComponentModel;
+using BH.oM.Reflection.Attributes;
 
-namespace BH.oM.Base
+namespace BH.oM.Data.Library
 {
-    [Description("Settings to determine the uniqueness of an Object, i.e. when comparing and when computing the object Hash.")]
-    public class ComparisonConfig : BaseComparisonConfig
+    [Description("Settings object to be used by the Library_Engine for controling Dataset extraction.")]
+    public class LibrarySettings : ISettings
     {
+        /***************************************************/
+        /**** Properties                                ****/
+        /***************************************************/
+
+        [FolderPath]
+        [Description("List of folder paths to user-specified folder paths to be used by the Library_Engine when extracting Datasets.")]
+        public virtual HashSet<string> UserLibraryPaths { get; set; } = new HashSet<string>();
+
+        /***************************************************/
     }
 }
-
-
