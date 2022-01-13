@@ -6,6 +6,7 @@
     <Authors>BHoM</Authors>
     <Copyright>Copyright © https://github.com/BHoM</Copyright>
     <RootNamespace>BH.oM.Environment</RootNamespace>
+    <FileVersion>5.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,7 +25,6 @@
     <ProjectReference Include="..\Geometry_oM\Geometry_oM.csproj" />
     <ProjectReference Include="..\Physical_oM\Physical_oM.csproj" />
     <ProjectReference Include="..\Quantities_oM\Quantities_oM.csproj" />
-    <ProjectReference Include="..\Reflection_oM\Reflection_oM.csproj" />
   </ItemGroup>
 
 </Project>
