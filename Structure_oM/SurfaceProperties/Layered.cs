@@ -21,19 +21,31 @@
  */
 
 using BH.oM.Base;
-using BH.oM.Base.Attributes;
+using BH.oM.Structure.MaterialFragments;
+using System.ComponentModel;
+using System.Collections.Generic;
+using BH.oM.Quantities.Attributes;
 
-namespace BH.oM.Architecture.Elements
+namespace BH.oM.Structure.SurfaceProperties
 {
-    [ToBeRemoved("2.4", "Superseded by BH.oM.Geometry.SettingOut.Level")]
-    public class Level : BHoMObject
+    [Description("Property for 2D analytical elements representing a series of layers, each with different thickness, material, and orientation.")]
+    public class Layered : BHoMObject, ISurfaceProperty
     {
         /***************************************************/
         /**** Properties                                ****/
         /***************************************************/
 
-        public virtual double Elevation { get; set; } = 0.0;
+        [Description("A unique name is required for some structural packages to create and identify the object.")]
+        public override string Name { get; set; }
 
+        [Description("The primary material of the Surface Property. This may represent an 'effective' material model accounting for the composite behavior of the layers, or could be a single material for filtering and take-off.")]
+        public virtual IMaterialFragment Material { get; set; }
+
+        [Description("The material layers which compose the surface property listed from top surface to bottom.")]
+        public virtual List<Layer> Layers { get; set; } = new List<Layer>();
+
+        [Description("Defines what type of element this property will be used. Used by some analysis packages.")]
+        public virtual PanelType PanelType { get; set; } = PanelType.Slab;
 
         /***************************************************/
     }

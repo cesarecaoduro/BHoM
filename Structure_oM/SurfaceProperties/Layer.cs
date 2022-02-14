@@ -20,20 +20,35 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BH.oM.Base;
+using BH.oM.Structure.MaterialFragments;
 using System.ComponentModel;
+using System.Collections.Generic;
+using BH.oM.Quantities.Attributes;
 
-namespace BH.oM.Analytical.Results
-{
-    [Description("Base interface for any Mesh result class which is a collection of discrete MeshElementResults.")]
-    public interface IMeshResult<T> : IObjectIdResult, IResultCollection<T> where T : IMeshElementResult
+namespace BH.oM.Structure.SurfaceProperties
+{    
+    [Description("A layer object with a given material, orientation, and thickness.")]
+    public class Layer : BHoMObject
     {
+        /***************************************************/
+        /**** Properties                                ****/
+        /***************************************************/
 
+        [Description("The material this layer is made of.")]
+        public virtual IMaterialFragment Material { get; set; }
+
+        [Angle]
+        [Description("The orientation of the material in this layer. Orthotropic materials will be oriented with Z parallel to the panel normal direction, and X rotated counterclockwise about the panel normal by this angle from the panel X axis. Not relevant for isotropic materials.")]
+        public virtual double Orientation { get; set; } = 0;
+
+        [Length]
+        [Description("The thickness of this material layer.")]
+        public virtual double Thickness { get; set; } = 0;
+
+        /***************************************************/
     }
 }
+
 
 

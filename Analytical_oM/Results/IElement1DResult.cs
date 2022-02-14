@@ -1,4 +1,4 @@
-/*
+﻿/*
  * This file is part of the Buildings and Habitats object Model (BHoM)
  * Copyright (c) 2015 - 2022, the respective contributors. All rights reserved.
  *
@@ -26,12 +26,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace BH.oM.Analytical.Results
 {
-    public interface IAnalysisResult : IObjectIdResult, ICasedResult, ITimeStepResult
+    [Description("Base interface for results, corresponding to a discrete result at a particular position along a one-dimensional element.")]
+    public interface IElement1DResult : IResult, IObjectIdResult, IResultItem
     {
+        /***************************************************/
+        /**** Properties                                ****/
+        /***************************************************/
 
+        [Description("Position on the element as normalised length, i.e. 0 for start, 1 for end and 0.5 for middle.")]
+        double Position { get; }
+
+        [Description("How many division points along the element was used when extracting this result. This generally means that this many results with the same identifiers and varying Position was extracted.")]
+        int Divisions { get; }
+
+        /***************************************************/
     }
 }
 

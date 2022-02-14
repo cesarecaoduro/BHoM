@@ -1,4 +1,4 @@
-/*
+﻿/*
  * This file is part of the Buildings and Habitats object Model (BHoM)
  * Copyright (c) 2015 - 2022, the respective contributors. All rights reserved.
  *
@@ -20,6 +20,7 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
+using BH.oM.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,11 +30,19 @@ using System.ComponentModel;
 
 namespace BH.oM.Analytical.Results
 {
-    [Description("Base interface for any Mesh result class which is a collection of discrete MeshElementResults.")]
-    public interface IMeshResult<T> : IObjectIdResult, IResultCollection<T> where T : IMeshElementResult
+    [Description("Base interface to flag that the result is a simple result line.\n" +
+                 "A class implementing the IResultItem interface should only contain basic properties such as doubles, ints, strings, DateTime and similar.\n" +
+                 "For instance, a class implementing this interface could be represented as a single row in a table (e.g. Excel or a SQL database) with its properties explicitly readable.")]
+    public interface IResultItem : IResult
     {
+        /***************************************************/
+        /**** Properties                                ****/
+        /***************************************************/
 
+
+        /***************************************************/
     }
 }
+
 
 

@@ -23,8 +23,9 @@
 using System.ComponentModel;
 using BH.oM.Base;
 using BH.oM.Dimensional;
+using BH.oM.Geometry;
 
-namespace BH.oM.Geometry.SettingOut
+namespace BH.oM.Spatial.SettingOut
 {
     [Description("An individual Grid 'line' - can be curved or free-form as well as simple linear line segments. " +
                  "\nUseful for coordination and setting out of spatial objects for transdisciplinary workflows.")]

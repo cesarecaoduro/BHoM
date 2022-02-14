@@ -1,4 +1,4 @@
-/*
+﻿/*
  * This file is part of the Buildings and Habitats object Model (BHoM)
  * Copyright (c) 2015 - 2022, the respective contributors. All rights reserved.
  *
@@ -21,20 +21,21 @@
  */
 
 using BH.oM.Base;
-using BH.oM.Dimensional;
-using BH.oM.Geometry;
-using BH.oM.Base.Attributes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel;
 
-namespace BH.oM.Architecture.Elements
+namespace BH.oM.Analytical.Results
 {
-    [ToBeRemoved("2.4", "Superseded by BH.oM.Geometry.SettingOut.Grid")]
-    public class Grid : BHoMObject, IElement1D
+    [Description("Base interface for result classes where the values apply to the entire object referenced to with the ObjectID.")]
+    public interface IObjectResult : IResult, IObjectIdResult, IResultItem
     {
         /***************************************************/
         /**** Properties                                ****/
         /***************************************************/
-
-        public virtual ICurve Curve { get; set; } = null;
 
 
         /***************************************************/
